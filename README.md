@@ -3,7 +3,7 @@
 Este projeto é uma aplicação em Java realizada como forma de desafio tecnico de nivel de entrada, resolvi por optar usar mais espreções lambda as quais, 
 sempre tivi umas certa dificuldade, para realizar o desafio.
 
-mesmo que tenham side relativamente facil , levaram cerca de 5 horas .
+mesmo que tenham side relativamente facil , levaram cerca de 2.5 horas .
 
 ## Funcionalidades
 

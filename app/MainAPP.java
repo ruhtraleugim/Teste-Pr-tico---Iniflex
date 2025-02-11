@@ -26,8 +26,6 @@ public class MainAPP {
         usecase.criarFuncionario(funcionarios.getF9());
         usecase.criarFuncionario(funcionarios.getF10());
 
-
-
         System.out.println(usecase.listarFuncionarios());
         System.out.println();
 
@@ -42,12 +40,12 @@ public class MainAPP {
         System.out.println(usecase.listarFuncionarios());
         System.out.println();
 
-        //por função
-
+        usecase.agruparPorFuncao();
+        System.out.println();
 
 
         System.out.println(usecase.buscarFuncionariosDataDeAniversario( 10  ));
-        System.out.println(usecase.buscarFuncionariosDataDeAniversario( 12  ));
+        System.out.println(usecase.buscarFuncionariosDataDeAniversario( 12 ));//se não tivessem demitido o probre do joão ele apareceria aqui
         System.out.println();
 
         usecase.buscarFuncionarioMaisVelho().ifPresent(funcionario ->{
@@ -56,14 +54,14 @@ public class MainAPP {
                 });
         System.out.println();
 
-
         System.out.println(usecase.listarFuncionariosPorOrdemAlfabetica());;
         System.out.println();
 
-        usecase.EmSalariosMinimos();
-
+        System.out.println(usecase.somaSalario());
         System.out.println();
 
-        usecase.agruparPorFuncao();
+        usecase.emSalariosMinimos();
+        System.out.println();
+
     }
 }

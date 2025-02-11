@@ -48,13 +48,21 @@ public class FuncionarioUsecase {
         return funcionarios;
     }
 
+    public BigDecimal somaSalario(){
+        BigDecimal salarioTotal = BigDecimal.ZERO;
+
+        for (FuncionarioDomain funcionario : funcionarios){
+            salarioTotal = salarioTotal.add(funcionario.getSalario());
+        }
+        return salarioTotal;
+    }
 
 
     public BigDecimal paraSalarioMinimo(BigDecimal salario){
         return salario.divide(salarioMinimo,2,RoundingMode.HALF_EVEN );
     }
 
-    public void EmSalariosMinimos(){
+    public void emSalariosMinimos(){
         funcionarios.stream().forEach(funcionario -> {
             System.out.println(funcionario.getNome()+"--"+ paraSalarioMinimo(funcionario.getSalario())+" salários mínimos");
         });

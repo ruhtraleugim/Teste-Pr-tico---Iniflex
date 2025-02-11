@@ -13,7 +13,7 @@ A aplicação realiza as seguintes ações com os dados dos funcionários:
 2. **Remover Funcionário**: Remove o funcionário "João" da lista de funcionários. nada a comentar , mas tadinho do joão 
 3. **Exibir Funcionários**: Exibe todos os funcionários com suas informações no formato correto. O famoso get basico 
 4. **Aumento de Salário**: Aplica um aumento de 10% no salário de todos os funcionários.
-5. **Agrupar Funcionários por Função**: Agrupa os funcionários por sua função, armazenando esses grupos em um mapa. Isso foi meio chatinho pq tive que refazer umas 3 vezes.
+5. **Agrupar Funcionários por Função**: Agrupa os funcionários por sua função, armazenando esses grupos em um mapa. Isso foi meio chatinho pq tive que refazer a logica umas 3 vezes pra funcionar.
 6. **Exibir Funcionários Agrupados**: Exibe os funcionários agrupados por função.
 7. **Aniversários de Funcionários**: Exibe os funcionários que fazem aniversário nos dias 10 e 12. PS: O joão fazia dia 12 , tadinho do joão
 8. **Funcionário Mais Velho**: Exibe o nome e idade do funcionário mais velho.

@@ -45,7 +45,7 @@ public class MainAPP {
 
 
         System.out.println(usecase.buscarFuncionariosDataDeAniversario( 10  ));
-        System.out.println(usecase.buscarFuncionariosDataDeAniversario( 12 ));//se não tivessem demitido o probre do joão ele apareceria aqui
+        System.out.println(usecase.buscarFuncionariosDataDeAniversario( 12 ));
         System.out.println();
 
         usecase.buscarFuncionarioMaisVelho().ifPresent(funcionario ->{

@@ -1,23 +1,23 @@
 # Projeto de Gestão de Funcionários
 
-Este projeto é uma aplicação em Java realizada como forma de desafio tecnico de nivel de entrada, resolvi por optar usar mais expreções lambda as quais, 
-sempre tive umas certa dificuldade, para realizar o desafio.
+Este projeto é uma aplicação em Java realizada como forma de desafio tecnico de nivel de entrada, resolvi por optar usar Java puro e me desafiei a usar mais expreções lambda (que sempre tive dificuldade), para realizar o desafio.
 
-mesmo que tenham sido relativamente facil , levaram cerca de 2.5 horas .
+mesmo que tenham sido relativamente facil(foi bem facil) , levaram cerca de 2.5 horas .
+Teria sido bem mais usando Spring, oque facilitaria muitas coisas, como geração de getters e setters, construtores, etc.
 
 ## Funcionalidades
 
 A aplicação realiza as seguintes ações com os dados dos funcionários:
 
 1. **Inserir Funcionários**: Adiciona uma lista de funcionários com informações como nome, data de nascimento, salário e função.Como não tinha um banco de dados simulei um em memoria
-2. **Remover Funcionário**: Remove o funcionário "João" da lista de funcionários. nada a comentar , mas tadinho do joão 
+2. **Remover Funcionário**: Remove o funcionário "João" da lista de funcionários. nada a comentar , mas uma pena do joão .
 3. **Exibir Funcionários**: Exibe todos os funcionários com suas informações no formato correto. O famoso get basico 
 4. **Aumento de Salário**: Aplica um aumento de 10% no salário de todos os funcionários.
-5. **Agrupar Funcionários por Função**: Agrupa os funcionários por sua função,criando um map com sua chave sendo a função dos funcionarios. Isso foi meio chatinho pq tive que refazer a logica umas 3 vezes pra funcionar.
-6. **Exibir Funcionários Agrupados**: Exibe os funcionários agrupados por função.
-7. **Aniversários de Funcionários**: Exibe os funcionários que fazem aniversário nos dias 10 e 12. PS: O joão fazia dia 12 , tadinho do joão
+5. **Agrupar Funcionários por Função**: Agrupa os funcionários por sua função,criando um map com sua chave sendo a função dos funcionarios. Isso foi meio chatinho pq tive que refazer a logica umas 3 vezes pra funcionar, devo adimitir que não tenho familiaridade em usar muito maps, inclusive vi uma forma mais facil de fazer depois de concluir o desafio.
+6. **Exibir Funcionários Agrupados**: Exibe os funcionários agrupados por função acima.
+7. **Aniversários de Funcionários**: Exibe os funcionários que fazem aniversário nos dias 10 e 12. PS: O joão fazia dia 12 , mas como foi removido não tem mais ninguem;
 8. **Funcionário Mais Velho**: Exibe o nome e idade do funcionário mais velho.
-9. **Ordenar Funcionários por Nome**: Exibe a lista de funcionários ordenada alfabeticamente por nome.
+9. **Ordenar Funcionários por Nome**: Exibe a lista de funcionários ordenada alfabeticamente por nome. 
 10. **Total de Salários**: Exibe o total de todos os salários dos funcionários.
 11. **Salários Mínimos**: Exibe quantos salários mínimos (R$ 1212,00) cada funcionário ganha.
 

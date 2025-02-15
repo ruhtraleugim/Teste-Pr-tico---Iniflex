@@ -55,6 +55,7 @@ public class MainAPP {
         System.out.println(usecase.listarFuncionariosPorOrdemAlfabetica());;
         System.out.println("************************"   );
 
+        System.out.println("Total da soma dos funcionarios presentes:");
         System.out.println(usecase.somaSalario());
         System.out.println("************************"   );
 

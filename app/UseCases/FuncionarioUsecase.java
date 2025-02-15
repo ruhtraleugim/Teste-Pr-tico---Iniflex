@@ -18,15 +18,15 @@ public class FuncionarioUsecase {
     
     public void excluirFuncionario(String nome, LocalDate aniversario){
         funcionarios.removeIf(funcionario -> funcionario.getNome()
-                                                                        .equals(nome) && funcionario
-                                                                        .getDataNascimento()
-                                                                        .equals(aniversario));
+                                                        .equals(nome) && funcionario
+                                                        .getDataNascimento()
+                                                        .equals(aniversario));
     }
     
     public void aumentarSalario(BigDecimal aumento){
         funcionarios.forEach(funcionario -> funcionario.setSalario(
-            funcionario.getSalario().multiply(aumento)
-            ));
+                                                        funcionario.getSalario()
+                                                            .multiply(aumento)));
     }
 
     public List<FuncionarioDomain> listarFuncionarios(){
@@ -70,12 +70,13 @@ public class FuncionarioUsecase {
 
     public void agruparPorFuncao(){
         Map<String, List<FuncionarioDomain>> funcionariosMap = funcionarios.stream()
-                                                                                 .collect(Collectors.groupingBy(FuncionarioDomain::getFuncao));
-        funcionariosMap.forEach((funcao,listaFuncionarios) -> {
-            System.out.println("função " + funcao);
-            listaFuncionarios.forEach(funcionario ->
-                    System.out.println("    " + funcionario.getNome()));
-        });
+                .collect(Collectors.groupingBy(FuncionarioDomain::getFuncao));
+        
+                funcionariosMap.forEach((funcao,listaFuncionarios) -> {
+            System.out.println("Empregados na função de " + funcao + ":");
 
+            listaFuncionarios.forEach(funcionario ->
+                    System.out.println("_____" + funcionario.getNome() + "_____"));
+        });
     }
 }
